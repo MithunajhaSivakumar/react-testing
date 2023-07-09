@@ -1,0 +1,3 @@
+"coverage": "yarn test --coverage" - to print code coverage of last uncommitted changes
+"coverage": "yarn test --coverage --watchAll" - to print code coverage for all the files in the project
+"coverage": "yarn test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}'" - to print code coverage for specific files as mentioned

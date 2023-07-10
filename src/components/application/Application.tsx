@@ -6,11 +6,13 @@ export default function Application() {
     <h1>Job Application Form</h1>
     <h2>Section 1</h2>
     <p>All elements are mandatory</p>
+
+    <img src="https://hello.com" alt="Hello World" />
     <form>
         {/* // input type="text" and also textarea both have same role textbox */}
         <div>
             <label htmlFor='name'>Name</label>
-            <input type='text' id='name' placeholder='Fullname'/>
+            <input type='text' id='name' placeholder='Fullname' value='Mithunajha' onChange={()=>{}}/>
         </div>
         <div>
             <label htmlFor='bio'>Bio</label>

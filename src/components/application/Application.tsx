@@ -8,6 +8,7 @@ export default function Application() {
     <p>All elements are mandatory</p>
     <span title='close'>X</span>
     <img src="https://hello.com" alt="Hello World" />
+    <div data-testid='custom-element'>Custom HTML Element</div>
     <form>
         {/* // input type="text" and also textarea both have same role textbox */}
         <div>

@@ -27,6 +27,9 @@ describe('Application', ()=> {
         const paragraphElement = screen.getByText('All elements are mandatory');
         expect(paragraphElement).toBeInTheDocument();
 
+        const closeElement = screen.getByTitle('close');
+        expect(closeElement).toBeInTheDocument();
+
         const imageElement = screen.getByAltText('Hello World');
         expect(imageElement).toBeInTheDocument();
 

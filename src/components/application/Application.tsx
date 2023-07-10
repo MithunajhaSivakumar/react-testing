@@ -6,7 +6,7 @@ export default function Application() {
     <h1>Job Application Form</h1>
     <h2>Section 1</h2>
     <p>All elements are mandatory</p>
-
+    <span title='close'>X</span>
     <img src="https://hello.com" alt="Hello World" />
     <form>
         {/* // input type="text" and also textarea both have same role textbox */}

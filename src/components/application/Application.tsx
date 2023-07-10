@@ -16,7 +16,7 @@ export default function Application() {
             <textarea id='bio' name='bio'/>
         </div>
         <div>
-            <label htmlFor='job-location'>Job Location</label>
+            <label htmlFor='job-location'>Name</label>
             <select id='job-location'>
                 <option value="">Select a Country</option>
                 <option value="US">United States</option>

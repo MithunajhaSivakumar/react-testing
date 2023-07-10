@@ -2,10 +2,18 @@ import React from 'react'
 
 export default function Application() {
   return (
+    <>
+    <h1>Job Application Form</h1>
+    <h2>Section 1</h2>
     <form>
+        {/* // input type="text" and also textarea both have same role textbox */}
         <div>
             <label htmlFor='name'>Name</label>
             <input type='text' id='name'/>
+        </div>
+        <div>
+            <label htmlFor='bio'>Bio</label>
+            <textarea id='bio' name='bio'/>
         </div>
         <div>
             <label htmlFor='job-location'>Job Location</label>
@@ -24,5 +32,6 @@ export default function Application() {
         </div>
         <button>Submit</button>
     </form>
+    </>
   )
 }

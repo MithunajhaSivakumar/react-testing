@@ -27,6 +27,15 @@ describe('Application', ()=> {
         const paragraphElement = screen.getByText('All elements are mandatory');
         expect(paragraphElement).toBeInTheDocument();
 
+        const paragraphElement2 = screen.getByText(/all elements are mandatory/i);
+        expect(paragraphElement2).toBeInTheDocument();
+
+        const paragraphElement3 = screen.getByText(/^all elements are mandatory$/i);
+        expect(paragraphElement3).toBeInTheDocument();
+
+        const paragraphElement4 = screen.getByText((content) => content.startsWith('All'));
+        expect(paragraphElement4).toBeInTheDocument();
+
         const closeElement = screen.getByTitle('close');
         expect(closeElement).toBeInTheDocument();
 
